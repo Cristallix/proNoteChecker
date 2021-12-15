@@ -1,0 +1,26 @@
+.matiere {
+    margin-left: 2em;
+    font-size: 1.2rem;
+    color: rgb(108, 108, 129);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2em;
+}
+
+.matiere:first-child {
+    flex: 1;
+}
+
+.matiere h4 {
+    color: black;
+}
+.matiere ul {
+    display: inline-flex;
+    flex-wrap: nowrap;
+    list-style: none;
+    padding: 0;
+}
+
+.matiere ul li {
+    margin-right: 2em;
+}

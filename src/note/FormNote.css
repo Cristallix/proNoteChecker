@@ -1,0 +1,22 @@
+form {
+  background-color: #f1f1f1 !important;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+}
+
+form > label {
+  display: inline-flex;
+  align-items: center;
+  font-size: 1.1em;
+  margin: 0 2em;
+}
+
+form > label > input, form > label > select {
+  margin-left: 1em;
+  padding-left: 0 0.6em;
+  height: 2em;
+  line-height: 2em;
+  border: none;
+  border-radius: 0.4rem;
+}
