@@ -1,0 +1,10 @@
+article {
+  display: flex !important;
+  flex-flow: column nowrap;
+  margin-top: 2em;
+}
+
+article > .moyenne-generale {
+  font-size: 1.75em;
+  align-self: center;
+}
