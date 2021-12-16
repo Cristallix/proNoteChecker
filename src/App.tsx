@@ -1,6 +1,4 @@
-import { useEffect, useState } from "react";
 import FormNote from "./note/FormNote";
-import Bulletin from "./note/Bulletin";
 import { Matiere, getMatieres } from "./services/note.services";
 
 import "./App.css";
@@ -12,11 +10,6 @@ const recupererMatiere = async (callback: (matieres: Matiere[]) => void) => {
 };
 
 function App() {
-  const [matieres, setMatieres] = useState<Matiere[]>();
-  useEffect(() => {
-    recupererMatiere(setMatieres);
-  }, []);
-
   return (
     <div className="App">
       <header className="App-header">
@@ -24,8 +17,7 @@ function App() {
         <h1>Bulletin trimestriel</h1>
       </header>
       <section>
-        <FormNote onSucess={() => recupererMatiere(setMatieres)} />
-        {matieres && <Bulletin matieres={matieres} />}
+        <FormNote onSucess={() => console.log('Super')} />
       </section>
     </div>
   );

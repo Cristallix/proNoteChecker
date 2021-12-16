@@ -1,6 +1,6 @@
-import { MatiereAPI } from "../common/note-utils";
+import { MatiereAPI, matieresName } from "../common/note-utils";
 
-const baseUrl = "http://po714539.siege.axa-fr.intraxa:8080";
+const baseUrl = "toto";
 
 export type Matiere = {
   eleve: string;
@@ -40,10 +40,10 @@ export const getMatieres = async (eleve: string = "Thomas") => {
   return matieresGlobal;
 };
 
-export const saveNote = async (note: number, matiere: string) => {
+export const saveNote = async (note: number) => {
   const body = JSON.stringify({
     note,
-    matiere,
+    matiere: matieresName[0],
     coefficient: 1,
     eleve: "Thomas",
   });
