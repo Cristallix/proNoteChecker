@@ -1,6 +1,6 @@
 import { MatiereAPI, matieresName } from "../common/note-utils";
 
-const baseUrl = "http://po714539.siege.axa-fr.intraxa:8080";
+const baseUrl = "toto";
 
 export type Matiere = {
   eleve: string;
